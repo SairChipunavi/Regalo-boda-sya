@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Un mensaje especial de S & A — 26-12-2026">
+  <title>Un detalle especial | S & A</title>
+  <style>
+    :root{
+      --verde:#315443;
+      --verde-claro:#6f8978;
+      --crema:#f7f3eb;
+      --dorado:#b99a63;
+      --texto:#3d403d;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px 18px;
+      background:
+        radial-gradient(circle at 15% 15%, rgba(111,137,120,.14), transparent 28%),
+        radial-gradient(circle at 85% 85%, rgba(185,154,99,.12), transparent 28%),
+        var(--crema);
+      color:var(--texto);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .card{
+      width:min(680px,100%);
+      background:rgba(255,255,255,.88);
+      border:1px solid rgba(185,154,99,.38);
+      border-radius:26px;
+      padding:52px 34px 46px;
+      text-align:center;
+      box-shadow:0 18px 55px rgba(49,84,67,.13);
+      position:relative;
+      overflow:hidden;
+    }
+    .leaf{
+      position:absolute;
+      width:150px;height:150px;
+      border-radius:50%;
+      border:1px solid rgba(111,137,120,.18);
+    }
+    .leaf.a{left:-90px;top:-80px}
+    .leaf.b{right:-90px;bottom:-80px}
+    .small{
+      letter-spacing:4px;
+      text-transform:uppercase;
+      font-family:Arial,sans-serif;
+      font-size:11px;
+      color:var(--verde-claro);
+      margin-bottom:20px;
+    }
+    .monogram{
+      font-size:42px;
+      color:var(--verde);
+      letter-spacing:7px;
+      margin-bottom:7px;
+    }
+    .date{
+      color:var(--dorado);
+      font-family:Arial,sans-serif;
+      letter-spacing:3px;
+      font-size:13px;
+      margin-bottom:38px;
+    }
+    .line{
+      width:62px;
+      height:1px;
+      background:var(--dorado);
+      margin:0 auto 32px;
+    }
+    h1{
+      font-weight:normal;
+      font-size:30px;
+      color:var(--verde);
+      margin:0 0 24px;
+    }
+    .message{
+      max-width:545px;
+      margin:0 auto;
+      font-size:18px;
+      line-height:1.8;
+    }
+    .signature{
+      margin-top:32px;
+      font-size:21px;
+      color:var(--verde);
+      font-style:italic;
+    }
+    .footer{
+      margin-top:30px;
+      font-family:Arial,sans-serif;
+      font-size:11px;
+      letter-spacing:1.5px;
+      color:#879087;
+    }
+    @media(max-width:480px){
+      .card{padding:40px 23px 36px;border-radius:20px}
+      .monogram{font-size:34px}
+      h1{font-size:26px}
+      .message{font-size:16px;line-height:1.75}
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="leaf a"></div>
+    <div class="leaf b"></div>
+
+    <div class="small">Un detalle especial</div>
+    <div class="monogram">S &amp; A</div>
+    <div class="date">26 · 12 · 2026</div>
+
+    <div class="line"></div>
+
+    <h1>Su presencia es nuestro mejor regalo</h1>
+
+    <div class="message">
+      <p>Si desean acompañarnos con un detalle, agradeceremos mucho que sea en efectivo, ya que después de nuestra boda emprenderemos un nuevo viaje y no podremos llevar regalos materiales con nosotros.</p>
+    </div>
+
+    <div class="signature">Con mucho cariño,<br>S &amp; A</div>
+
+    <div class="footer">GRACIAS POR SER PARTE DE NUESTRO DÍA</div>
+  </main>
+</body>
+</html>
