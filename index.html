@@ -127,6 +127,25 @@
     <div class="signature">Con mucho cariño,<br>S &amp; A</div>
 
     <div class="footer">GRACIAS POR SER PARTE DE NUESTRO DÍA</div>
+  <div style="margin-top:25px;">
+  <button onclick="document.getElementById('ventanaQR').style.display='flex'"
+  style="background:#315443;color:white;border:1px solid #b99a63;padding:14px 28px;border-radius:30px;font-size:16px;cursor:pointer;">
+  🎁 REGALO EN EFECTIVO
+  </button>
+</div>
+
+<div id="ventanaQR" style="display:none;position:fixed;inset:0;background:#000b;z-index:9999;align-items:center;justify-content:center;padding:20px;">
+  <div style="background:#fff;padding:20px;border-radius:18px;max-width:380px;width:100%;text-align:center;">
+    <h2 style="color:#315443;">Regalo de boda SyA</h2>
+    <p>Escanea nuestro QR para realizar tu regalo.</p>
+    <img src="qr-bancario.png" style="width:100%;max-width:320px;">
+    <p>¡Muchas gracias por acompañarnos!</p>
+    <button onclick="document.getElementById('ventanaQR').style.display='none'"
+    style="background:#315443;color:white;padding:12px 25px;border:0;border-radius:20px;">
+    CERRAR
+    </button>
+  </div>
+</div>
   </main>
 </body>
 </html>
